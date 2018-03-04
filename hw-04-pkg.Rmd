@@ -1,5 +1,5 @@
 ---
-title: "HW 03 - Bike rentals in DC"
+title: "HW 04 - Pick a package or two"
 author: "INSERT NAME HERE"
 date: "INSERT TODAY'S DATE HERE"
 output: github_document
