@@ -5,24 +5,6 @@ date: "INSERT TODAY'S DATE HERE"
 output: github_document
 ---
 
-### Load packages and data
-
-```{r load-packages-data, message=FALSE}
-library(tidyverse)
-library(broom)
-library(lubridate)
-bike <- read_csv("data/bikeshare-day.csv")
-
-bike <- bike %>%
-  mutate(month = month(dteday))
-
-bike %>% 
-  count(season, month)
-
-ggplot(bike, aes(x = factor(season), y = cnt)) + geom_boxplot()
-```
-
-
 ### Question 1 - Which package are you using? 
 
 State the name of the package, whether it was on CRAN or GitHub, and include the code for loading it.
